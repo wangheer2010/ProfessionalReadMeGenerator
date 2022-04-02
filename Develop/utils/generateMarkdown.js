@@ -37,10 +37,10 @@ function generateMarkdown(data) {
   ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
-  - [Usage](Usage)
-  - [Contributing](Contributing)
-  - [Tests](Tests)
-  - [Questions](Questions)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
   ## Description
   ${data.description}
@@ -55,8 +55,8 @@ function generateMarkdown(data) {
   ## Tests
   ${data.tests}
   ## Questions
-  ![My git Repo](https://github.com/${data.username})
-  ![Contact Me](mailto:${data.emailaddress})
+  - [My git Repo](https://github.com/${data.username})
+  - [Contact Me](mailto:${data.emailaddress})
 `;
 }
 
