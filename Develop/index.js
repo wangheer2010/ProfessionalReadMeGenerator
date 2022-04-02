@@ -7,91 +7,104 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 const questions = [
     {
         type: 'input',
-        name: 'xxx',
-        message:'Enter your xxx',
+        name: 'title',
+        message:'Enter your title of the repo',
         validate: answer => {
             if (answer) {
                 return true;
             } else {
-                console.log('Sorry, please enter xxx to continue');
+                console.log('Sorry, please enter your title to continue');
                 return false
             }
         }
     },
     {
         type: 'input',
-        name: 'xxx',
-        message:'Enter your xxx',
+        name: 'description',
+        message:'Enter your description of the repo',
         validate: answer => {
             if (answer) {
                 return true;
             } else {
-                console.log('Sorry, please enter xxx to continue');
+                console.log('Sorry, please enter the description to continue');
                 return false
             }
         }
     },
     {
         type: 'input',
-        name: 'xxx',
-        message:'Enter your xxx',
+        name: 'installation',
+        message:'Enter your instructions on installation of your repo',
         validate: answer => {
             if (answer) {
                 return true;
             } else {
-                console.log('Sorry, please enter xxx to continue');
+                console.log('Sorry, please enter installation instructions to continue');
                 return false
             }
         }
     },
     {
         type: 'input',
-        name: 'xxx',
-        message:'Enter your xxx',
+        name: 'usage',
+        message:'Enter your usage information of the repo',
         validate: answer => {
             if (answer) {
                 return true;
             } else {
-                console.log('Sorry, please enter xxx to continue');
+                console.log('Sorry, please enter the usage information to continue');
                 return false
             }
         }
     },
     {
         type: 'input',
-        name: 'xxx',
-        message:'Enter your xxx',
+        name: 'contributing',
+        message:'Enter your contributing guidelines',
         validate: answer => {
             if (answer) {
                 return true;
             } else {
-                console.log('Sorry, please enter xxx to continue');
+                console.log('Sorry, please enter contributing guidelines to continue');
                 return false
             }
         }
     },
     {
         type: 'input',
-        name: 'xxx',
-        message:'Enter your xxx',
+        name: 'tests',
+        message:'Enter your test instructions',
         validate: answer => {
             if (answer) {
                 return true;
             } else {
-                console.log('Sorry, please enter xxx to continue');
+                console.log('Sorry, please enter test instructions to continue');
                 return false
             }
         }
     },
     {
         type: 'input',
-        name: 'xxx',
-        message:'Enter your xxx',
+        name: 'username',
+        message:'Enter your github username',
         validate: answer => {
             if (answer) {
                 return true;
             } else {
-                console.log('Sorry, please enter xxx to continue');
+                console.log('Sorry, please enter your github username to continue');
+                return false
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'emailaddress',
+        message:'Enter your email address',
+        validate: answer => {
+            if (answer) {
+                return true;
+            } else {
+                console.log('Sorry, please enter your email address to continue');
                 return false
             }
         }
