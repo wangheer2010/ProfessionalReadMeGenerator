@@ -95,7 +95,21 @@ const questions = [
                 return false
             }
         }
-    }
+    },
+    {
+        type: 'checkbox',
+        name: 'license',
+        message:'Please select a license that you used for the project',
+        choices: ['MIT','Apache 2.0','License not listed'],
+        validate: answer => {
+            if (answer) {
+                return true;
+            } else {
+                console.log('Sorry, please select an answer to continue');
+                return false
+            }
+        }
+    },
 
 ];
 
